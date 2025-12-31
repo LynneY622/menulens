@@ -64,6 +64,7 @@ const App: React.FC = () => {
       setAppState(AppState.MENU_VIEW);
     } catch (error) {
       alert("Parsing failed. Please try a clearer photo.");
+      console.error(error)
       setAppState(AppState.UPLOAD);
     } finally {
       setLoading(false);
