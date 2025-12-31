@@ -5,15 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>MenuLens</title>
     
-    <!-- PWA Settings -->
-    <link rel="manifest" href="/manifest.json" />
+    <link rel="manifest" href="./manifest.json" />
     <meta name="theme-color" content="#ffffff" />
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="apple-mobile-web-app-title" content="MenuLens">
     <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/1046/1046857.png">
 
-    <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -27,10 +25,11 @@
       ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
       ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
     </style>
-  <script type="importmap">
+    <script type="importmap">
 {
   "imports": {
     "react": "https://aistudiocdn.com/react@^19.2.3",
+    "react-dom": "https://aistudiocdn.com/react-dom@^19.2.3",
     "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.3/",
     "react/": "https://aistudiocdn.com/react@^19.2.3/",
     "@google/genai": "https://aistudiocdn.com/@google/genai@^1.34.0",
@@ -41,10 +40,11 @@
   }
 }
 </script>
+  <link rel="stylesheet" href="/index.css">
 </head>
   <body class="bg-slate-50">
     <div id="root"></div>
-    <!-- Point to the local source file -->
-    <script type="module" src="/src/index.tsx"></script>
-  </body>
+    <script type="module" src="./index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
 </html>

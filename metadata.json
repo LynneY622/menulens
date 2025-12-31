@@ -1,0 +1,7 @@
+{
+  "name": "MenuLens - Smart Menu Translator",
+  "description": "A smart dining companion that translates menus into Chinese, finds dish images online, and provides personalized recommendations based on dietary preferences.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
