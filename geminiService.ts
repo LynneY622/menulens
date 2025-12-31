@@ -13,7 +13,7 @@ export const parseMenuImage = async (base64Image: string): Promise<MenuAnalysisR
   const ai = new GoogleGenAI({ apiKey: getApiKey() });
   const mimeMatch = base64Image.match(/^data:(image\/[a-zA-Z]+);base64,/);
   const mimeType = mimeMatch ? mimeMatch[1] : "image/jpeg";
-  const cleanBase64 = base64Image.replace(/^data:image\/[a-zA-Z]+;base64,/, "");
+  // const cleanBase64 = base64Image.replace(/^data:image\/[a-zA-Z]+;base64,/, "");
 
   const response = await ai.models.generateContent({
     model: "gemini-3-flash-preview",

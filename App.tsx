@@ -56,6 +56,7 @@ const App: React.FC = () => {
   const handleFileSelect = async (base64: string) => {
     setLoading(true);
     setAppState(AppState.PROCESSING_MENU);
+    console.log(base64)
     try {
       const result = await parseMenuImage(base64);
       setMenuItems(result.items);
